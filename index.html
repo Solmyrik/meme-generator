@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meme generator</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="index.html" class="header__logo">Meme generator</a>
+        </div>
+      </header>
+      <main class="page">
+        <section class="main">
+          <div class="main__container">
+            <div class="main__wrapper">
+              <div class="main__top">
+                <div class="main__file">
+                  <label for="imageInput" class="custom-file-input">
+                    <img
+                      class="main__add"
+                      src="public/images/add.svg"
+                      alt="add"
+                      style="width: 40px"
+                    />
+                  </label>
+                  <input type="file" id="imageInput" style="opacity: 0" />
+                </div>
+                <input
+                  class="setting__input"
+                  type="text"
+                  id="memeText"
+                  placeholder="Введите текст"
+                />
+              </div>
+              <div id="canvasContainer">
+                <canvas class="canvas" id="memeCanvas"></canvas>
+              </div>
+              <div class="main__bottom">
+                <button class="main__button" id="saveImageBtn">Скачать</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
